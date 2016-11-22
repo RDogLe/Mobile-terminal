@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/base.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
+    <title>商品团</title>
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+            font-size: 20px;
+        }
+        .fenlei_list{
+            width: 100%;
+            height: 100%;
+        }
+        .fenlei_list .left{
+            height: 100%;
+            width: 2rem;
+            background: rgba(0,0,0,0.5);
+            position: relative;
+        }
+        .fenlei_list .left a{
+            width: 0.875rem;
+            height: 0.725rem;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -0.4375rem;
+            margin-top: -0.3625rem;
+        }
+        .left a img{
+            width: 100%;
+            height: 100%;
+        }
+        .fenlei_list .right{
+            width: 14rem;
+            background: #333;
+        }
+        .fenlei_list .right .head{
+            width: 13rem;
+            height: 2.575rem;
+            border-bottom: 1px solid #404040;
+            margin-left: 0.5rem;
+            color: #fff;
+            text-align: center;
+            line-height: 2.575rem;
+        }
+        .right .head h4:nth-child(1){
+            font-size: 0.65rem;
+            width: 6.5rem;
+            border-bottom: 4px solid #fff;
+            float: left;
+        }
+        .right .head h4:nth-child(2){
+            font-size: 0.65rem;
+            width: 6.5rem;
+            float: left;
+        }
+        .fenlei_list .right div ul{
+            margin-left: 1.525rem;
+        }
+        .fenlei_list .right div ul li{
+            width: 6.225rem;
+            color: #aaa;
+            line-height: 2rem;
+            font-size: 0.65rem;
+            float: left;
+        }
+    </style>
+    <script>
+        window.onload = function(){
+            (function(win,doc){
+                var rem = 20/320*doc.documentElement.clientWidth;
+                doc.documentElement.style.fontSize = rem+'px';
+                window.onresize = function(){
+                    var rem = 20/320*doc.documentElement.clientWidth;
+                    doc.documentElement.style.fontSize = rem+'px';
+                }
+            })(window,document)
+        }
+    </script>
+</head>
+<body>
+<section class="fenlei_list clearfix">
+    <div class="left fl">
+        <a href="javascript:;">
+            <img src="images/jx.png" alt="" />
+        </a>
+    </div>
+    <div class="right fr">
+        <div class="fr">
+            <div class="head fl">
+                <h4>分类</h4>
+                <h4>地区</h4>
+            </div>
+            <ul>
+                <li>全部</li>
+                <li>摄影</li>
+                <li>美食</li>
+                <li>培训</li>
+                <li>休闲</li>
+                <li>旅游</li>
+                <li>电影</li>
+                <li>酒店</li>
+                <li>生活服务</li>
+                <li>粮油生鲜</li>
+                <li>丽人</li>
+                <li>汽车服务</li>
+                <li>卡券</li>
+                <li>通讯</li>
+                <li>房产汽车</li>
+            </ul>
+        </div>
+
+
+    </div>
+</section>
+</body>
+</html>

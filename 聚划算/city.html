@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/base.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scale=no" />
+    <title>city</title>
+    <style>
+        /*--html--*/
+        html{
+            font-size: 20px;
+        }
+        /*--header--*/
+        header{
+            width: 16rem;
+            height: 2.475rem;
+            border-top: 1px solid #c5c5c5;
+            background: -webkit-linear-gradient(#f6f6f6,#ededed);
+            position: relative;
+        }
+        header .back{
+            width: 3.25rem;
+            height: 1.6rem;
+            background: url(images/bc.png) no-repeat;
+            background-size: 100%;
+            position: absolute;
+            left: 0.5rem;
+            top: 0.5rem;
+            text-indent: -9999rem;
+        }
+        header .city{
+            font-size: 0.75rem;
+            color: #333;
+            text-align: center;
+            margin-top: 0.725rem;
+            display: block;
+        }
+        .content div{
+            height: 2.2rem;
+            border-bottom: 1px solid #dedede;
+            font-size: 0.75rem;
+            color: #000;
+            line-height: 2.2rem;
+            font-weight: bold;
+            padding-left: 1.525rem;
+            background: #f8f8f8;
+        }
+        .content div:nth-child(1) i:nth-child(1){
+            display: block;
+            width: 0.55rem;
+            height: 0.65rem;
+            background: url(images/wz.png) no-repeat;
+            background-size: 100%;
+            margin-top: 0.675rem;
+            float: left;
+        }
+        .content div:nth-child(1) i:nth-child(2){
+            font-size: 0.75rem;
+            padding-left: 0.55rem;
+            border-bottom: none;
+        }
+        .content div:nth-child(1) i:nth-child(3){
+            float: right;
+            width: 0.65rem;
+            height: 0.65rem;
+            margin-top: 0.825rem;
+            margin-right: 2.425rem;
+            background: url(images/xz.png) no-repeat;
+            background-size: 100%;
+        }
+        .content div:nth-child(2){
+            height: 1.5rem;
+            background: #eee;
+            font-size: 0.65rem;
+            color: #999;
+            line-height: 1.5rem;
+        }
+        .content div:nth-child(7){
+            height: 1.5rem;
+            background: #eee;
+            font-size: 0.65rem;
+            color: #999;
+            line-height: 1.5rem;
+        }
+    </style>
+    <script>
+        window.onload = function(){
+            (function(win,doc){
+                var rem = 20/320*doc.documentElement.clientWidth;
+                doc.documentElement.style.fontSize = rem+'px';
+                window.onresize = function(){
+                    var rem = 20/320*doc.documentElement.clientWidth;
+                    doc.documentElement.style.fontSize = rem+'px';
+                }
+            })(window,document)
+        }
+    </script>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <a href="javascript:;" class="back">返回</a>
+        <a href="javascript:;" class="city">切换城市</a>
+    </header>
+    <section class="content">
+        <div><i></i><i>当前位置 - 杭州</i><i></i></div>
+        <div>热门城市</div>
+        <div>南京</div>
+        <div>福州</div>
+        <div>武汉</div>
+        <div>天津</div>
+        <div>A</div>
+        <div>鞍山</div>
+        <div>安庆</div>
+        <div>澳门</div>
+        <div>九寨沟</div>
+        <div>阿勒泰地区</div>
+    </section>
+</body>
+</html>

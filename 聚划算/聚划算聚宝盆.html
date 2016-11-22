@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/base.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scale=no" />
+    <title>money</title>
+    <style>
+        /*--html--*/
+        html{
+            font-size: 20px;
+        }
+        /*--header--*/
+        header{
+            width: 16rem;
+            height: 2.475rem;
+            border-top: 1px solid #c5c5c5;
+            background: -webkit-linear-gradient(#f6f6f6,#ededed);
+            position: relative;
+        }
+        header .back{
+            width: 3.25rem;
+            height: 1.6rem;
+            background: url(images/bc.png) no-repeat;
+            background-size: 100%;
+            position: absolute;
+            left: 0.5rem;
+            top: 0.5rem;
+            text-indent: -9999rem;
+        }
+        header .money{
+            font-size: 0.75rem;
+            color: #333;
+            text-align: center;
+            margin-top: 0.725rem;
+            display: block;
+        }
+        /*--nav--*/
+        nav{
+            width: 16.075rem;
+            height: 2rem;
+            border-bottom: 1px solid #dcdcdc;
+            overflow: hidden;
+        }
+        nav a{
+            width: 3.975rem;
+            border-right: 1px solid #dcdcdc;
+            font-size: 0.575rem;
+            color: #999;
+            line-height: 2rem;
+            text-align: center;
+            float: left;
+        }
+        nav a:last-child{
+            color: #d51942;
+            border-right: none;
+        }
+        /*--banner--*/
+        .banner{
+            height: 6.675rem;
+            overflow: hidden;
+            position: relative;
+            border-bottom: 1px solid #dcdcdc;
+        }
+        .banner img{
+            width: 16rem;
+            height: 5.7rem;
+        }
+        .banner ul{
+            width: 80rem;
+            height: 6.675rem;
+        }
+        .banner ul li{
+            float: left;
+        }
+        .banner ol{
+            height: 0.2rem;
+            position: absolute;
+            left: 50%;
+            bottom: 0.375rem;
+            margin-left: -1.25rem;
+            margin-bottom: 0.375rem;
+        }
+        .banner ol li{
+            width: 0.25rem;
+            height: 0.25rem;
+            background: #a9a9a9;
+            border-radius: 50%;
+            margin:0 0.125rem;
+            float: left;
+        }
+        ol li.on{
+            background: #333;
+        }
+        /*--content--*/
+        .content div{
+            margin-top: 1rem;
+            height: 3.975rem;
+            border-bottom: 1px solid #dcdcdc;
+            position: relative;
+        }
+        .content .jmp p:nth-child(1){
+            width: 1.95rem;
+            height: 1.95rem;
+            margin-left: 0.85rem;
+            margin-top: 0.025rem;
+        }
+        .content .jmp p:nth-child(1) img{
+            width: 100%;
+            height: 100%;
+        }
+        .content .jmp p:nth-child(2){
+            font-size: 0.85rem;
+            color: #6a237f;
+            font-weight: bold;
+            margin-left: 1.2rem;
+        }
+        .content .jmp p:nth-child(3){
+            font-size: 0.575rem;
+            color: #999;
+            margin-top: 1.375rem;
+            position: absolute;
+            left: 4rem;
+        }
+        .content .jmp p:nth-child(4){
+            width: 0.325rem;
+            height: 0.55rem;
+            margin-top: 0.725rem;
+            margin-right: 0.525rem;
+        }
+        .content .jmp p:nth-child(3) img{
+            width: 100%;
+            height: 100%;
+        }
+        .content .jmp p:nth-child(2).jjz{
+            color: #9e5f44;
+        }
+        .content .jmp p:nth-child(2).jt{
+            color: #8db46d;
+        }
+    </style>
+    <script>
+        window.onload = function(){
+            (function(win,doc){
+                var rem = 20/320*doc.documentElement.clientWidth;
+                doc.documentElement.style.fontSize = rem+'px';
+                window.onresize = function(){
+                    var rem = 20/320*doc.documentElement.clientWidth;
+                    doc.documentElement.style.fontSize = rem+'px';
+                }
+            })(window,document)
+        }
+    </script>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <a href="javascript:;" class="back">返回</a>
+        <a href="javascript:;" class="money">聚宝盆</a>
+    </header>
+    <!--nav-->
+    <section>
+        <nav>
+            <a href="javascript:;">商品</a>
+            <a href="javascript:;">生活</a>
+            <a href="javascript:;">品牌</a>
+            <a href="javascript:;">聚宝盆</a>
+        </nav>
+    </section>
+    <!--banner-->
+    <section class="banner">
+        <ul class="clearfix">
+            <li><img src="images/money.png" alt="" /></li>
+            <li><img src="images/money.png" alt="" /></li>
+            <li><img src="images/money.png" alt="" /></li>
+            <li><img src="images/money.png" alt="" /></li>
+            <li><img src="images/money.png" alt="" /></li>
+        </ul>
+        <ol>
+            <li class="on"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </section>
+    <section class="content">
+        <div>
+            <div class="jmp clearfix">
+                <p class="fl"><img src="images/m1.png" alt="" /></p>
+                <p class="fl">聚名品</p>
+                <p class="fl">轻奢购物第一站</p>
+                <p class="fr">
+                    <a href="javascript:;">
+                        <img src="images/rightj.png" alt="" />
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="jmp clearfix">
+                <p class="fl"><img src="images/m2.png" alt="" /></p>
+                <p class="jjz fl">聚家装</p>
+                <p class="fl">家装一起团  费用省一半！</p>
+                <p class="fr">
+                    <a href="javascript:;">
+                        <img src="images/rightj.png" alt="" />
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div>
+            <div class="jmp clearfix">
+                <p class="fl"><img src="images/m3.png" alt="" /></p>
+                <p class="jt fl">聚&nbsp;&nbsp;&nbsp;&nbsp;透</p>
+                <p class="fl">每晚8点   预定明日商品</p>
+                <p class="fr">
+                    <a href="javascript:;">
+                        <img src="images/rightj.png" alt="" />
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

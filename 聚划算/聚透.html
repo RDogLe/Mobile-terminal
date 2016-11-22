@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/base.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scale=no" />
+    <title>聚透</title>
+    <style>
+        /*--html--*/
+        html{
+            font-size: 20px;
+        }
+        /*--header--*/
+        /*--header--*/
+        header{
+            width: 16rem;
+            height: 2.475rem;
+            border-top: 1px solid #c5c5c5;
+            background: -webkit-linear-gradient(#f6f6f6,#ededed);
+            position: relative;
+        }
+        header .back{
+            width: 3.25rem;
+            height: 1.6rem;
+            background: url(images/bc.png) no-repeat;
+            background-size: 100%;
+            position: absolute;
+            left: 0.5rem;
+            top: 0.5rem;
+            text-indent: -9999rem;
+        }
+        header .jvtou{
+            font-size: 0.75rem;
+            color: #333;
+            text-align: center;
+            margin-top: 0.725rem;
+            display: block;
+        }
+        /*--nav--*/
+        nav{
+            width: 16.075rem;
+            height: 2rem;
+            border-bottom: 1px solid #dcdcdc;
+            overflow: hidden;
+        }
+        nav a{
+            width: 3.975rem;
+            border-right: 1px solid #dcdcdc;
+            font-size: 0.575rem;
+            color: #999;
+            line-height: 2rem;
+            text-align: center;
+            float: left;
+        }
+        nav a:first-child{
+            color: #d51942;
+        }
+        nav a:last-child{
+            border-right: none;
+        }
+        /*--content--*/
+        .content .c-box{
+            height: 4.975rem;
+            border-bottom: 1px solid #dcdcdc;
+            overflow: hidden;
+        }
+        .c-l{
+            width: 6rem;
+            height: 4rem;
+            margin-left: 0.5rem;
+            margin-top: 0.5rem;
+            float: left;
+            border: 1px solid #dcdcdc;
+        }
+        .c-l a img{
+            width: 5.6rem;
+            height: 3.6rem;
+            padding:0.25rem;
+        }
+        .c-r{
+            float: left;
+            width: 7.5rem;
+            margin-top: 0.525rem;
+            margin-left: 0.7rem;
+        }
+        .c-r p:nth-child(1){
+            font-size: 0.65rem;
+            color: #000;
+            line-height: 0.9rem;
+        }
+        .c-r p:nth-child(2){
+            font-size: 0.6rem;
+            color: #c3213c;
+            line-height: 1.1rem;
+        }
+        .c-r p:nth-child(3){
+            font-size: 0.45rem;
+            color: #999;
+            line-height: 0.95rem;
+        }
+        .c-r p:nth-child(2) i {
+            font-size: 0.8rem;
+            color: #c3213c;
+        }
+        .c-r p:nth-child(3) i:nth-child(1){
+            font-size: 0.45rem;
+            color: #999;
+            text-decoration: line-through;
+        }
+        .c-r p:nth-child(3) i:nth-child(2){
+            width: 2.5rem;
+            height: 0.75rem;
+            border-radius: 10%;
+            background: #39b54a;
+            font-size: 0.6rem;
+            color: #fff;
+            line-height: 0.75rem;
+            float: right;
+        }
+    </style>
+    <script>
+        window.onload = function(){
+            (function(win,doc){
+                var rem = 20/320*doc.documentElement.clientWidth;
+                doc.documentElement.style.fontSize = rem+'px';
+                window.onresize = function(){
+                    var rem = 20/320*doc.documentElement.clientWidth;
+                    doc.documentElement.style.fontSize = rem+'px';
+                }
+            })(window,document)
+        }
+    </script>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <a href="javascript:;" class="back">返回</a>
+        <a href="javascript:;" class="jvtou">聚透</a>
+    </header>
+    <!--nav-->
+    <section>
+        <nav>
+            <a href="javascript:;">商品</a>
+            <a href="javascript:;">生活</a>
+            <a href="javascript:;">品牌</a>
+            <a href="javascript:;">聚宝盆</a>
+        </nav>
+    </section>
+    <!--content-->
+    <section class="content">
+        <div class="c-box clearfix">
+            <div class="c-l">
+                <a href="javascript:;">
+                    <img src="images/shop1.png" alt="" />
+                </a>
+            </div>
+            <div class="c-r">
+                <p><a href="javascript:;">新田园，林下散养草鸡蛋<br />40枚 纯天然无污染</a></p>
+                <p>¥<i>51</i>.00</p>
+                <p><i>¥96.00</i><i>即将开团</i></p>
+            </div>
+        </div>
+        <div class="c-box clearfix">
+            <div class="c-l">
+                <a href="javascript:;">
+                    <img src="images/shop2.png" alt="" />
+                </a>
+            </div>
+            <div class="c-r">
+                <p><a href="javascript:;">香港九龙东智选假日酒店<br />高级房1晚＋2份自助早餐</a></p>
+                <p>¥<i>770</i>.00</p>
+                <p><i>¥3088.00</i><i>即将开团</i></p>
+            </div>
+        </div>
+        <div class="c-box clearfix">
+            <div class="c-l">
+                <a href="javascript:;">
+                    <img src="images/shop3.png" alt="" />
+                </a>
+            </div>
+            <div class="c-r">
+                <p><a href="javascript:;">帅康TA2W欧式油烟机<br />+019B2燃气灶</a></p>
+                <p>¥<i>2468</i>.00</p>
+                <p><i>¥3304.00</i><i>即将开团</i></p>
+            </div>
+        </div>
+        <div class="c-box clearfix">
+            <div class="c-l">
+                <a href="javascript:;">
+                    <img src="images/shop4.png" alt="" />
+                </a>
+            </div>
+            <div class="c-r">
+                <p><a href="javascript:;">云水谣主题餐厅塘河路店<br />赏原生态云贵特色美食</a></p>
+                <p>¥<i>24</i>.00</p>
+                <p><i>¥26.00</i><i>即将开团</i></p>
+            </div>
+        </div>
+        <div class="c-box clearfix">
+            <div class="c-l">
+                <a href="javascript:;">
+                    <img src="images/shop5.png" alt="" />
+                </a>
+            </div>
+            <div class="c-r">
+                <p><a href="javascript:;">男士个性拼接撞色POLO<br />衫</a></p>
+                <p>¥<i>49</i>.00</p>
+                <p><i>¥128.00</i><i>即将开团</i></p>
+            </div>
+        </div>
+        <div class="c-box clearfix">
+            <div class="c-l">
+                <a href="javascript:;">
+                    <img src="images/shop6.png" alt="" />
+                </a>
+            </div>
+            <div class="c-r">
+                <p><a href="javascript:;">威妮华华丽玫瑰花优雅项<br />链</a></p>
+                <p>¥<i>36</i>.00</p>
+                <p><i>¥68.00</i><i>即将开团</i></p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

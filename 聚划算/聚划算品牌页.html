@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/base.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scale=no" />
+    <title>brand</title>
+    <style>
+        /*--html--*/
+        html{
+            font-size: 20px;
+        }
+        /*--header--*/
+        header{
+            width: 16rem;
+            height: 2.475rem;
+            border-top: 1px solid #c5c5c5;
+            background: -webkit-linear-gradient(#f6f6f6,#ededed);
+            position: relative;
+        }
+        header .back{
+            width: 3.25rem;
+            height: 1.6rem;
+            background: url(images/bc.png) no-repeat;
+            background-size: 100%;
+            position: absolute;
+            left: 0.5rem;
+            top: 0.5rem;
+            text-indent: -9999rem;
+        }
+        header .live{
+            font-size: 0.75rem;
+            color: #333;
+            text-align: center;
+            margin-top: 0.725rem;
+            display: block;
+        }
+        /*--nav--*/
+        nav{
+            width: 16.075rem;
+            height: 2rem;
+            border-bottom: 1px solid #dcdcdc;
+            overflow: hidden;
+        }
+        nav a{
+            width: 3.975rem;
+            border-right: 1px solid #dcdcdc;
+            font-size: 0.575rem;
+            color: #999;
+            line-height: 2rem;
+            text-align: center;
+            float: left;
+        }
+        nav a:nth-child(3){
+            color: #d51942;
+        }
+        nav a:last-child{
+            border-right: none;
+        }
+        /*--content--*/
+        .content .c-box{
+            height: 6.45rem;
+            border-bottom: 1px solid #dcdcdc;
+            overflow: hidden;
+        }
+        .c-box p:nth-child(1){
+            width: 2.825rem;
+            height: 2.1rem;
+            background: url(images/b1.png) no-repeat;
+            background-size: 100%;
+            margin-left: 1.35rem;
+            margin-top: 1.225rem;
+        }
+        .c-box p:nth-child(2){
+            font-size: 1.075rem;
+            color: #c7223d;
+            float: left;
+            margin-left: 1.025rem;
+            margin-top: 1.1rem;
+            font-weight: bold;
+        }
+        .c-box p:nth-child(3){
+            width: 1.2rem;
+            height: 1.2rem;
+            font-size: 0.575rem;
+            color: #999;
+            float: left;
+            margin-top: 1.025rem;
+            margin-left: 0.425rem;
+        }
+        .c-box p:nth-child(3) i{
+            font-size: 0.575rem;
+            color: #c7223d;
+        }
+        .c-box p:nth-child(1).only{
+            width: 3.05rem;
+            height: 2.125rem;
+            background: url(images/b2.png) no-repeat;
+            background-size: 100%;
+            margin-left: 1.2rem;
+            margin-top: 1.2rem;
+        }
+        .c-box p:nth-child(1).ln{
+            width: 2.325rem;
+            height: 2.1rem;
+            background: url(images/b3.png) no-repeat;
+            background-size: 100%;
+            margin-left: 1.65rem;
+            margin-top: 1.325rem;
+        }
+        .c-box p:nth-child(1).baby{
+            width: 2rem;
+            height: 2.2rem;
+            background: url(images/b4.png) no-repeat;
+            background-size: 100%;
+            margin-left: 1.65rem;
+            margin-top: 1.325rem;
+        }
+        .c-box p:nth-child(1).my{
+            width: 2.6rem;
+            height: 2.35rem;
+            background: url(images/my.png) no-repeat;
+            background-size: 100%;
+            margin-left: 1.425rem;
+            margin-top: 1.25rem;
+        }
+        .c-box p:nth-child(1).mt{
+            width: 2.95rem;
+            height: 2.275rem;
+            background: url(images/mt.png) no-repeat;
+            background-size: 100%;
+            margin-left: 1.35rem;
+            margin-top: 1.15rem;
+        }
+        .c-box a{
+            margin-top: 0.7rem;
+            margin-bottom: 0.75rem;
+        }
+        .c-box .c-r{
+            display: block;
+            width: 10rem;
+            height: 5rem;
+            float: right;
+            margin-right: 0.5rem;
+            position: relative;
+        }
+        .c-box .c-r img{
+            width: 100%;
+            height: 100%;
+        }
+        a span{
+            display: block;
+            width: 100%;
+            height: 1rem;
+            background: #1e1e24;
+            opacity: .3;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        a i{
+            font-size: 0.575rem;
+            color: #fff;
+            position: absolute;
+            left: 0.35rem;
+            bottom: 0.125rem;
+        }
+    </style>
+    <script>
+        window.onload = function(){
+            (function(win,doc){
+                var rem = 20/320*doc.documentElement.clientWidth;
+                doc.documentElement.style.fontSize = rem+'px';
+                window.onresize = function(){
+                    var rem = 20/320*doc.documentElement.clientWidth;
+                    doc.documentElement.style.fontSize = rem+'px';
+                }
+            })(window,document)
+        }
+    </script>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <a href="javascript:;" class="back">返回</a>
+        <a href="javascript:;" class="live">品牌团</a>
+    </header>
+    <!--nav-->
+    <section>
+        <nav>
+            <a href="javascript:;">商品</a>
+            <a href="javascript:;">生活</a>
+            <a href="javascript:;">品牌</a>
+            <a href="javascript:;">聚宝盆</a>
+        </nav>
+    </section>
+    <!--content-->
+    <section class="content">
+        <div class="c-box clearfix">
+            <div class="c-l fl">
+                <p></p>
+                <p>3.5</p>
+                <p>全场<i>折起</i></p>
+            </div>
+            <a href="javascript:;">
+                <a href="javascript:;" class="c-r">
+                    <img src="images/brand1.png" alt="" />
+                    <span></span>
+                    <i>极致轻快 绝影一击</i>
+                </a>
+            </a>
+        </div>
+        <div class="c-box clearfix">
+            <div class="c-l fl">
+                <p class="only"></p>
+                <p>5.5</p>
+                <p>全场<i>折起</i></p>
+            </div>
+            <a href="javascript:;">
+                <a href="javascript:;" class="c-r">
+                    <img src="images/brand2.png" alt="" />
+                    <span></span>
+                    <i>品味生活  精致生活</i>
+                </a>
+            </a>
+        </div>
+        <div class="c-box clearfix">
+            <div class="c-l fl">
+                <p class="ln"></p>
+                <p>3.0</p>
+                <p>全场<i>折起</i></p>
+            </div>
+            <a href="javascript:;">
+                <a href="javascript:;" class="c-r">
+                    <img src="images/brand3.png" alt="" />
+                    <span></span>
+                    <i>大牌纷呈  清凉一夏</i>
+                </a>
+            </a>
+        </div>
+        <div class="c-box clearfix">
+            <div class="c-l fl">
+                <p class="baby"></p>
+                <p>3.0</p>
+                <p>全场<i>折起</i></p>
+            </div>
+            <a href="javascript:;">
+                <a href="javascript:;" class="c-r">
+                    <img src="images/brand4.png" alt="" />
+                    <span></span>
+                    <i>大牌纷呈  清凉一夏</i>
+                </a>
+            </a>
+        </div>
+        <div class="c-box clearfix">
+            <div class="c-l fl">
+                <p class="my"></p>
+                <p>2.5</p>
+                <p>全场<i>折起</i></p>
+            </div>
+            <a href="javascript:;">
+                <a href="javascript:;" class="c-r">
+                    <img src="images/brand5.png" alt="" />
+                    <span></span>
+                    <i>初夏驻颜 年轻梦境</i>
+                </a>
+            </a>
+        </div>
+        <div class="c-box clearfix">
+            <div class="c-l fl">
+                <p class="mt"></p>
+                <p>2.0</p>
+                <p>全场<i>折起</i></p>
+            </div>
+            <a href="javascript:;">
+                <a href="javascript:;" class="c-r">
+                    <img src="images/brand6.png" alt="" />
+                    <span></span>
+                    <i>周周上新 惊艳一夏</i>
+                </a>
+            </a>
+        </div>
+    </section>
+</body>
+</html>

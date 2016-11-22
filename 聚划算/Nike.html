@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/base.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scale=no" />
+    <title>Nike</title>
+    <style>
+        /*--html--*/
+        html{
+            font-size: 20px;
+        }
+        /*--header--*/
+        /*--header--*/
+        header{
+            width: 16rem;
+            height: 2.475rem;
+            border-top: 1px solid #c5c5c5;
+            background: -webkit-linear-gradient(#f6f6f6,#ededed);
+            position: relative;
+        }
+        header .back{
+            width: 3.25rem;
+            height: 1.6rem;
+            background: url(images/bc.png) no-repeat;
+            background-size: 100%;
+            position: absolute;
+            left: 0.5rem;
+            top: 0.5rem;
+            text-indent: -9999rem;
+        }
+        header .nike{
+            font-size: 0.75rem;
+            color: #333;
+            text-align: center;
+            margin-top: 0.725rem;
+            display: block;
+        }
+        /*--content--*/
+        .content .logo{
+            height: 8rem;
+            position: relative;
+        }
+        .logo img{
+            width: 100%;
+            height: 100%;
+        }
+        .logo span{
+            width: 100%;
+            height: 1rem;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background: rgba(0,0,0,.5);
+        }
+        .logo i{
+            font-size: 0.575rem;
+            color: #fff;
+            position: absolute;
+            left: 0.375rem;
+            bottom: 0.125rem;
+        }
+        .c-pic{
+            height: 2.2rem;
+            background: -webkit-linear-gradient(#fff 0, #fff 80%, #eee 100%);
+            border-bottom: 1px solid #b4b4b4;
+        }
+        .c-pic .c-left{
+            width: 2.825rem;
+            height: 1rem;
+            margin-left: 0.675rem;
+            margin-top: 0.65rem;
+        }
+        .c-left img{
+            width: 100%;
+            height: 100%;
+        }
+        .c-pic .c-r1{
+            width: 1.2rem;
+            height: 1.2rem;
+            font-size: 0.575rem;
+            margin-top: 0.375rem;
+            margin-right: 0.45rem;
+        }
+        .c-pic .c-r1 i{
+            font-size: 0.575rem;
+            color: #c7223d;
+        }
+        .c-pic .c-r2{
+            font-size: 1.075rem;
+            color: #c7223d;
+            margin-right: 0.1375rem;
+            margin-top: 0.55rem;
+            font-weight: bold;
+        }
+        .content .c-box{
+            height: 4.975rem;
+            border-bottom: 1px solid #dcdcdc;
+            overflow: hidden;
+        }
+        .c-l{
+            width: 6rem;
+            height: 4rem;
+            margin-left: 0.5rem;
+            margin-top: 0.5rem;
+            float: left;
+            border: 1px solid #dcdcdc;
+        }
+        .c-l a img{
+            width: 5.6rem;
+            height: 3.6rem;
+            padding:0.25rem;
+        }
+        .c-r{
+            float: left;
+            width: 7.5rem;
+            margin-top: 0.525rem;
+            margin-left: 0.7rem;
+        }
+        .c-r p:nth-child(1){
+            font-size: 0.65rem;
+            color: #000;
+            line-height: 0.9rem;
+        }
+        .c-r p:nth-child(2){
+            font-size: 0.6rem;
+            color: #c3213c;
+            line-height: 1.1rem;
+        }
+        .c-r p:nth-child(3){
+            font-size: 0.45rem;
+            color: #999;
+            line-height: 0.95rem;
+        }
+        .c-r p:nth-child(2) i:nth-child(1){
+            font-size: 0.8rem;
+            color: #c3213c;
+        }
+        .c-r p:nth-child(2) i:nth-child(2){
+            font-size: 0.45rem;
+            color: #999;
+            text-decoration: line-through;
+        }
+    </style>
+    <script>
+        window.onload = function(){
+            (function(win,doc){
+                var rem = 20/320*doc.documentElement.clientWidth;
+                doc.documentElement.style.fontSize = rem+'px';
+                window.onresize = function(){
+                    var rem = 20/320*doc.documentElement.clientWidth;
+                    doc.documentElement.style.fontSize = rem+'px';
+                }
+            })(window,document)
+        }
+    </script>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <a href="javascript:;" class="back">返回</a>
+        <a href="javascript:;" class="nike">Nike</a>
+    </header>
+    <!--content-->
+    <section class="content">
+        <div class="logo">
+            <a href="javascript:;">
+                <img src="images/nike.png" alt="" />
+            </a>
+            <span></span>
+            <i>极致轻快 绝影一击</i>
+        </div>
+        <div class="c-pic clearfix">
+            <p class="c-left fl">
+                <img src="images/logo1.png" alt="" />
+            </p>
+            <p class="c-r1 fr">全场<i>折起</i></p>
+            <p class="c-r2 fr">3.5</p>
+        </div>
+        <div class="c-box clearfix">
+            <div class="c-l">
+                <a href="javascript:;">
+                    <img src="images/nike1.png" alt="" />
+                </a>
+            </div>
+            <div class="c-r">
+                <p><a href="javascript:;">2013新款耐克男鞋正品<br />耐克跑鞋nike专柜休闲男</a></p>
+                <p>¥<i>208</i>.00&nbsp;&nbsp;<i>¥280.00</i></p>
+                <p>1240 人已购买</p>
+            </div>
+        </div>
+        <div class="c-box clearfix">
+            <div class="c-l">
+                <a href="javascript:;">
+                    <img src="images/nike2.png" alt="" />
+                </a>
+            </div>
+            <div class="c-r">
+                <p><a href="javascript:;">耐克男鞋 专柜正品 耐克<br />赤足跑鞋NIKE运动鞋</a></p>
+                <p>¥<i>770</i>.00&nbsp;&nbsp;<i>¥3088.00</i></p>
+                <p>1240 人已购买</p>
+            </div>
+        </div>
+        <div class="c-box clearfix">
+            <div class="c-l">
+                <a href="javascript:;">
+                    <img src="images/nike3.png" alt="" />
+                </a>
+            </div>
+            <div class="c-r">
+                <p><a href="javascript:;">耐克男鞋专柜正品2013<br />新款nike跑步鞋赤足慢跑</a></p>
+                <p>¥<i>2468</i>.00&nbsp;&nbsp;<i>¥3304.00</i></p>
+                <p>140 人已购买</p>
+            </div>
+        </div>
+        <div class="c-box clearfix">
+            <div class="c-l">
+                <a href="javascript:;">
+                    <img src="images/nike4.png" alt="" />
+                </a>
+            </div>
+            <div class="c-r">
+                <p><a href="javascript:;">耐克男鞋 专柜正品 耐克<br />赤足跑鞋NIKE运动鞋</a></p>
+                <p>¥<i>24</i>.00&nbsp;&nbsp;<i>¥26.00</i></p>
+                <p>1240 人已购买</p>
+            </div>
+        </div>
+        <div class="c-box clearfix">
+            <div class="c-l">
+                <a href="javascript:;">
+                    <img src="images/nike5.png" alt="" />
+                </a>
+            </div>
+            <div class="c-r">
+                <p><a href="javascript:;">2013新款耐克男鞋正品<br />耐克跑鞋nike专柜休闲男</a></p>
+                <p>¥<i>49</i>.00&nbsp;&nbsp;<i>¥128.00</i></p>
+                <p>1240 人已购买</p>
+            </div>
+        </div>
+        <div class="c-box clearfix">
+            <div class="c-l">
+                <a href="javascript:;">
+                    <img src="images/nike6.png" alt="" />
+                </a>
+            </div>
+            <div class="c-r">
+                <p><a href="javascript:;">正品耐克板鞋陈冠希<br />NIKE复古低帮男休闲鞋</a></p>
+                <p>¥<i>36</i>.00&nbsp;&nbsp;<i>¥68.00</i></p>
+                <p>1240 人已购买</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

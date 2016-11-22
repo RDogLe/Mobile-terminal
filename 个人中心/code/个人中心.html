@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/base.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>个人中心</title>
+    <style>
+        html{
+            font-size: 20rem;
+        }
+        .head{
+            overflow: hidden;
+        }
+        header{
+            width: 18.75rem;
+            height: 2.1rem;
+            background: #fff;
+
+        }
+        header a:nth-child(1){
+            font-size: 0.6rem;
+            color: #000;
+            margin-top: 0.75rem;
+            margin-left: 0.425rem;
+            float: left;
+        }
+        header a img{
+            width: 0.375rem;
+            height: 0.6rem;
+            float: left;
+            margin-right: 0.7rem;
+            margin-left: 0.425rem;
+        }
+        header a:nth-child(2){
+            font-size: 0.825rem;
+            color: #000;
+            line-height: 2.1rem;
+            position: absolute;
+            left: 50%;
+        }
+        .content{
+            width: 18.75rem;
+            height: 27.85rem;
+            background:#ececf4;
+            overflow: hidden;
+        }
+        .logo{
+            width: 18.75rem;
+            height: 5.5rem;
+            margin-top: 0.75rem;
+        }
+        .logo img{
+            width: 100%;
+            height: 100%;
+        }
+        nav{
+            height: 1.8rem;
+            background: #fff;
+            margin-top: 0.65rem;
+            margin-bottom: 0.575rem;
+        }
+        nav a{
+            float: left;
+            display: block;
+            height: 1.35rem;
+            border-right: 1px solid #dcdcdc;
+            margin-top: 0.25rem;
+            font-size: 0.7rem;
+            line-height: 1.35rem;
+            color: #010101;
+        }
+        nav a:nth-child(1){
+            padding-right: 1.8rem;
+        }
+        nav a:nth-child(1) i{
+            display: block;
+            float: left;
+            width: 0.7rem;
+            height: 0.9rem;
+            background: url(../img/d1.png) no-repeat;
+            background-size: 100%;
+            margin-right: 0.575rem;
+            margin-top: 0.2rem;
+            margin-left: 1.725rem;
+        }
+        nav a:nth-child(2){
+            padding-right: 1.65rem;
+        }
+        nav a:nth-child(2) i{
+            display: block;
+            width: 0.975rem;
+            height: 0.875rem;
+            float: left;
+            background: url(../img/d2.png) no-repeat;
+            background-size: 100%;
+            margin-top: 0.225rem;
+            margin-left: 1.575rem;
+            margin-right: 0.6rem;
+        }
+        nav a:nth-child(3){
+            padding-right: 1.7rem;
+            border-right: none;
+        }
+        nav a:nth-child(3) i{
+            display: block;
+            width: 0.925rem;
+            height: 0.875rem;
+            float: left;
+            background: url(../img/t1.png) no-repeat;
+            background-size: 100%;
+            margin-top: 0.225rem;
+            margin-left: 1.6rem;
+            margin-right: 0.55rem;
+        }
+        .message div{
+            width: 18.75rem;
+            background: #fff;
+            line-height: 1.625rem;
+        }
+        .message div a{
+            height: 1.625rem;
+            font-size: 0.575rem;
+            color:#585858;
+            margin-left: 0.375rem;
+            padding-left: 0.5rem;
+            display: block;
+        }
+        .message div:nth-child(1) a:nth-child(1){
+            border-bottom: 1px solid #e4e4e4;
+        }
+        .message div i{
+            width: 0.375rem;
+            height: 0.6rem;
+            background: url(../img/right.png) no-repeat;
+            background-size: 100%;
+            margin-right:0.6rem;
+            margin-top: 0.475rem;
+            padding: 0;
+            float: right;
+        }
+        .message div:nth-child(2){
+            float: left;
+            height: 1.625rem;
+            margin-top: 0.95rem;
+            margin-bottom: 0.95rem;
+            position: relative;
+        }
+        .message div:nth-child(2) a:nth-child(1){
+            padding-left: 0.5rem;
+        }
+        .message div:nth-child(2) a:nth-child(2){
+            width: 1.975rem;
+            height: 1.1rem;
+            background: url(../img/tz.png) no-repeat;
+            background-size: 100%;
+            float: right;
+            position: absolute;
+            right: 0.625rem;
+            top: 0.3rem;
+            padding: 0;
+        }
+        .message div:nth-child(3){
+            float: left;
+            height: 6.575rem;
+            position: relative;
+        }
+        .message div:nth-child(3) a{
+            border-bottom: 1px solid #e4e4e4;
+        }
+        footer{
+            height: 2.4rem;
+            background: #fff;
+        }
+        footer a{
+            font-size: 0.575rem;
+            color: #545454;
+            float: left;
+            width: 1.15rem;
+        }
+        footer a:nth-child(1){
+            margin-left: 1.75rem;
+        }
+        footer a:nth-child(1) i{
+            float: left;
+            width: 1.025rem;
+            height: 1.025rem;
+            background: url(../img/g2.png) no-repeat;
+            background-size: 100%;
+            margin-top: 0.325rem;
+            margin-bottom: 0.2rem;
+        }
+        footer a:nth-child(2){
+            margin-left: 3.525rem;
+        }
+        footer a:nth-child(2) i{
+            float: left;
+            width: 1.1rem;
+            height: 0.925rem;
+            background: url(../img/g3.png) no-repeat;
+            background-size: 100%;
+            margin-top: 0.425rem;
+            margin-bottom: 0.2rem;
+        }
+        footer a:nth-child(3){
+            width: 1.75rem;
+            margin-left: 3.275rem;
+        }
+        footer a:nth-child(3) i{
+            float: left;
+            width: 1.025rem;
+            height: 1.025rem;
+            background: url(../img/g4.png) no-repeat;
+            background-size: 100%;
+            padding-left: 0.225rem;
+            margin-top: 0.375rem;
+            margin-bottom: 0.1rem;
+        }
+        /*footer a:nth-child(4){*/
+            /*width: 2.35rem;*/
+            /*margin-left: 7.65rem;*/
+        /*}*/
+        /*footer a:nth-child(4) i:nth-child(1){*/
+            /*width: 0.475rem;*/
+            /*height: 0.475rem;*/
+            /*margin-top: 0.15rem;*/
+            /*margin-left: 1rem;*/
+        /*}*/
+        /*footer a:nth-child(4) i:nth-child(2){*/
+            /*float: left;*/
+            /*width: 1.075rem;*/
+            /*height: 1.075rem;*/
+            /*background: url(../img/g5.png) no-repeat;*/
+            /*background-size: 100%;*/
+            /*margin-top: 0.35rem;*/
+            /*margin-bottom: 0.125rem;*/
+            /*padding-left: 0.65rem;*/
+        /*}*/
+    </style>
+    <script>
+        window.onload = function(){
+            (function(win,doc){
+                var rem = 20/320*doc.documentElement.clientWidth;
+                doc.documentElement.style.fontSize = rem+'px';
+                window.onresize = function(){
+                    var rem = 20/320*doc.documentElement.clientWidth;
+                    doc.documentElement.style.fontSize = rem+'px';
+                }
+            })(window,document)
+        }
+    </script>
+</head>
+<body>
+    <section class="head">
+        <header class="clearfix">
+            <a href="javascript:;"><img src="../img/left.png" alt="" />返回</a>
+            <a href="javascript:;">个人中心</a>
+        </header>
+    </section>
+    <section class="content">
+        <section class="logo">
+            <img src="../img/g1.png" alt="" />
+        </section>
+        <section>
+            <nav class="clearfix">
+                <a href="javascript:;"><i></i>订单</a>
+                <a href="javascript:;"><i></i>收藏</a>
+                <a href="javascript:;"><i></i>推荐</a>
+            </nav>
+        </section>
+        <section class="message clearfix">
+            <div>
+                <a href="javascript:;">修改个人资料<i class="right"></i></a>
+                <a href="javascript:;">修改密码<i class="right"></i></a>
+            </div>
+            <div>
+                <a href="javascript:;">声音推送通知</a>
+                <a href="javascript:;"></a>
+            </div>
+            <div>
+                <a href="javascript:;">猜你喜欢<i class="right"></i></a>
+                <a href="javascript:;">附近热门<i class="right"></i></a>
+                <a href="javascript:;">推荐商家<i class="right"></i></a>
+                <a href="javascript:;">设置<i class="right"></i></a>
+            </div>
+        </section>
+    </section>
+    <section>
+        <footer class="clearfix">
+            <a href="javascript:;"><i></i>首页</a>
+            <a href="javascript:;"><i></i>商家</a>
+            <a href="javascript:;"><i></i>购物车</a>
+        </footer>
+    </section>
+</body>
+</html>
